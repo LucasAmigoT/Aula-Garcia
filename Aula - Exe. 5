@@ -1,0 +1,18 @@
+<!-- Faça uma função que receba dois vetores Xs e Ys e retorne uma lista Zs contendo a soma de ambos, posição por posição.
+     Exemplo: Xs = [1, 2, 4, 6]
+              Ys = [6, 1, 1, 2]
+              Zs = [7, 3, 5, 8] -->
+              
+    <script>
+        
+        function vetor(xs, ys){
+            let zs = [];
+            for(let i = 0; i < xs.length; i++){
+                zs[i] = xs[i] + ys[i]
+            }return zs;
+        }
+        let arrXs = [1, 2, 4, 6];
+        let arrYs = [6, 1, 1, 2];
+        console.log(vetor(arrXs, arrYs));
+        
+    </script>
