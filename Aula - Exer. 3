@@ -1,0 +1,8 @@
+<!-- Faça uma Função que receba uma palavra e retorne a mesma palavra na ordem reversa. -->
+    <script>
+        function palavraReversa(xs){
+        return xs.split('').reverse().join('');
+        }
+        console.log(palavraReversa("lucas"));
+
+    </script>
