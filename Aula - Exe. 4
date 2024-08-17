@@ -1,0 +1,10 @@
+<!-- Usando o Exercício 3, Faça uma Função que decida se uma palavra é palindromo ou não. -->
+    <script>
+        
+        function palavraReversa(xs){
+        let reversa = xs.split('').reverse().join('');
+        return xs === reversa;
+        }
+        console.log(palavraReversa("lucas"));
+
+    </script>
