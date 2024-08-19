@@ -1,0 +1,56 @@
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', function(inputStdin) {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', function() {
+    inputString = inputString.split('\n');
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Complete the 'plusMinus' function below.
+ *
+ * The function accepts INTEGER_ARRAY arr as parameter.
+ */
+
+function plusMinus(arr) {
+    let maior = 0;
+    let menor = 0;
+    let neutro = 0;
+    
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > 0){
+            maior += 1/arr.length;
+        }
+        else if(arr[i] < 0){
+            menor += 1/arr.length;
+        }
+        else{
+            neutro += 1/arr.length;
+        }
+    }
+    console.log(maior);
+    console.log(menor);
+    console.log(neutro);
+}
+
+function main() {
+    const n = parseInt(readLine().trim(), 10);
+
+    const arr = readLine().replace(/\s+$/g, '').split(' ').map(arrTemp => parseInt(arrTemp, 10));
+
+    plusMinus(arr);
+}
