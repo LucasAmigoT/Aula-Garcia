@@ -1,0 +1,28 @@
+Alunos: Lucas de Amigo Tavares e Vitor Castro Dias
+
+function obterDados() {
+    let obj = { numeros  : [1,3,7,9,-1,0,4] };
+    return obj;
+}
+
+function exercicioAula6() {
+    let objExercicio = obterDados();
+    let div = document.createElement("div");
+    let divQ = document.createElement("div");
+    let soma = 0;
+    let divS = document.createElement("div");
+
+    for(let i = 0; i < objExercicio.numeros.length; i++){
+        soma += objExercicio.numeros[i];
+        let divN = document.createElement("div");
+        divN.innerHTML = objExercicio.numeros[i];
+        div.appendChild(divN);
+
+    }
+    divS.innerHTML = "Soma: " + soma;
+    divQ.innerHTML = "Quantidade: " + objExercicio.numeros.length;
+    
+    document.body.appendChild(div);
+    document.body.appendChild(divQ);
+    document.body.appendChild(divS);
+}
