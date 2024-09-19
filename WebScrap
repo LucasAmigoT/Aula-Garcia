@@ -69,13 +69,7 @@ function mudarTudo() {
     letra[i].style.color = 'white';
     letra[i].style.fontFamily = 'verdana';
     }
-
-    let remover = document.querySelectorAll('.elementor-shape.elementor-shape-top');
-    for(let i = 0; i < remover.length; i++){
-    remover[1].remove();
-    }
 }
-
 
                                                                               // >>>> Testes e functions que usei durante a atividade
 
