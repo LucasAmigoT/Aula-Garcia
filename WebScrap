@@ -40,37 +40,7 @@ function removerDiv() {
     for(let i = 0; i < remover.length; i++){
     remover[1].remove();
     }
-}
-
-
-                                                                                            // >> Usar todas as Funções de uma vez <<
-
-function mudarTudo() {
-    let imagem = document.querySelectorAll('img');
-    for(let i = 0; i < imagem.length; i++){
-        imagem[i].style.borderRadius = '15px';
-    }
-
-    let imgP = document.querySelectorAll('img');
-    for(let i = 0; i < imgP.length; i++){
-        if(imgP[i].srcset==='https://padariaseara.com.br/wp-content/uploads/2024/08/Fachada-Padaria-Nova-Seara-em-Santos-1024x600.jpg 1024w, https://padariaseara.com.br/wp-content/uploads/2024/08/Fachada-Padaria-Nova-Seara-em-Santos-300x176.jpg 300w, https://padariaseara.com.br/wp-content/uploads/2024/08/Fachada-Padaria-Nova-Seara-em-Santos-768x450.jpg 768w, https://padariaseara.com.br/wp-content/uploads/2024/08/Fachada-Padaria-Nova-Seara-em-Santos.jpg 1216w'){
-            imgP[i].srcset = "https://i.imgur.com/uzaUfdK.jpeg";
-        }
-    }
-
-    let fundo = document.querySelector('#page');
-    fundo.style.backgroundColor = "black";
-                                                                      // esta função foi criada para mudar a cor da data e horário de atendimento
-    let data = document.querySelector('.elementor-icon-list-text');
-    data.style.color = 'white';
-                                                                      // esta funcao foi usada para trocar todas as letras do site para a cor branca
-    let letra = document.querySelectorAll('h2, h3, span, p');
-    for(let i = 0; letra.length; i++){
-    letra[i].style.color = 'white';
-    letra[i].style.fontFamily = 'verdana';
-    }
-}
-
+} 
                                                                               // >>>> Testes e functions que usei durante a atividade
 
 // function objLetras() {
